@@ -2,4 +2,26 @@
 
 @section('content')
 
-    <h1> Panier</h1>
+    <div class="container">
+        <h1> Panier</h1>
+        <table class="table table-bordered table-condensed">
+            <tbody>
+
+            @foreach($listes as $liste)
+                <tr>
+
+                    <td>{{$liste->id}}</td>
+                    <td>{{$liste->prix}} €</td>
+                    <td>{{$liste->description}}</td>
+                    <td>{{$liste->count}}</td>
+                    <td><a style="margin-left: 33%;" href="http://localhost/laralecommerce/public/panier/s/{{$liste->id}}"><button type="button" class="btn btn-danger">supprimer</button></a></td>
+                </tr>
+            @endforeach
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+@endsection
