@@ -83,7 +83,7 @@
 
 
                 <div class="logo">
-                    <img src="chouette.png">
+                    <img src="/laralecommerce/public/img/chouette.png">
                     <h3>(Owl Art)</h3>
                 </div>
                     <a>Home</a>
@@ -119,23 +119,23 @@
 
                         <!-- Facebook -->
                         <a class="ic">
-                            <img src="facebook.png">
+                            <img src="/laralecommerce/public/img/facebook.png">
                         </a>
                         <!-- Twitter -->
                         <a class="ic">
-                            <img src="twitter.png">
+                            <img src="/laralecommerce/public/img/twitter.png">
                         </a>
                         <!-- Google +-->
                         <a class="ic">
-                            <img src="pinterest.png">
+                            <img src="/laralecommerce/public/img/pinterest.png">
                         </a>
                         <!--Linkedin -->
                         <a class="ic">
-                            <img src="deviantart.png">
+                            <img src="/laralecommerce/public/img/deviantart.png">
                         </a>
                         <!--Instagram-->
                         <a class="ic">
-                            <img src="flickr.png">
+                            <img src="/laralecommerce/public/img/flickr.png">
                         </a>
 
                     </div>
@@ -242,7 +242,7 @@
 
     <div class="container logo-pied">
         <div class="row">
-            <img src="chouette.png">
+            <img src="/laralecommerce/public/img/chouette.png">
         </div>
     </div>
     <!-- Footer -->

@@ -8,7 +8,7 @@
     <main>
 
 
-        <div class="enorme col-lg-12 col-md-12 col-12">
+        <div class=" col-lg-12 col-md-12 col-12">
             <H1>NOUVEAUTES</H1>
         </div>
 
@@ -20,7 +20,7 @@
                 @foreach($produits as $produit)
 
                 <div class="card move">
-                    <img class="card-img-top" src="{{$produit->photo}}" alt="Card image cap">
+                    <img class="card-img-top" src="/laralecommerce/public/img/{{$produit->photo}}" alt="Card image cap">
                     <div class="card-body cat">
                         <h5 class="card-title">{{$produit->nom}}</h5>
                         <p class="card-text">{{$produit->description}}<br>Taille : {{$produit->taille}}<br>{{$produit->prix}} €</p>

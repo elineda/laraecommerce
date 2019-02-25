@@ -25,5 +25,5 @@ Route::get('/panier/a/{n}','PanierController@add')->where('n','[0-9]+');
 
 Route::get('/produit','ProduitController@index');
 
-Route::get('/description','DescriptionController@index');
+Route::get('/description/{n}','DescriptionController@index')->where('n','[0-9]+');
 
