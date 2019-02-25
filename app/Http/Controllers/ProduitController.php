@@ -11,7 +11,7 @@ class ProduitController extends Controller
 
         $produits=\App\Produit::take(20)->get();
 
-
+        //return $produits;
         return view('produit')->withProduits($produits);
     }
 }
