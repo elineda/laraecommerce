@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/panier','paniercontroller@index');
+
+Route::get('/produit','produitcontroller@index');
