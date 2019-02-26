@@ -112,7 +112,7 @@
 
                     <!-- Grid column -->
                     <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                        <h6 class="mb-0">RESTEZ CONNECTE AVEC NOUS SUR LES RESEAUX SOCIAUX !</h6>
+                        <h6 class="mb-0">RESTEZ CONNECTE AVEC NOUS SUR LES RESEAUX SOCIAUX</h6>
                     </div>
                     <!-- Grid column -->
 
