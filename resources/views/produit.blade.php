@@ -8,12 +8,10 @@
     <main>
 
 
-        <div class=" col-lg-12 col-md-12 col-12">
-            <H1>NOUVEAUTES</H1>
-        </div>
+
 
         <div class="container">
-
+            <H1>Produits</H1>
 
             <div class="card-columns">
 

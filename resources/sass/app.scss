@@ -176,9 +176,13 @@ div.border a:hover:after {
   width: 100%;
 }
 
+.logo{
+    margin: 0  auto;
+    display: block;
+    width:400px;
+}
 .logo img {
-  width: 30%;
-  height: 30%;
+  width: 100%;
 }
 
 .border {
@@ -326,7 +330,6 @@ aside {
 
 .fond {
   width: 80%;
-  background-color: rgb(137, 7, 255);
   border-radius: 5px;
   margin: 0 auto;
 }
