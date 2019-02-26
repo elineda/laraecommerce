@@ -12,3 +12,535 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+* + * {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  /* background-image: url(plant.jpg); */
+  background-repeat: no-repeat;
+}
+
+.enorme {
+  font-family: 'Anton', sans-serif;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 105px;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+
+.enorme:hover {
+  transition: 1s;
+  background-color: #216fb2;
+  transform: translateY(20px);
+  border-top: 8px solid black;
+}
+
+.enorme h1 {
+  font-size: 250pt;
+  text-align: center;
+  color: black;
+  border-bottom: 8px solid black;
+  font-size: 18vw;
+}
+
+.top-bar {
+  font-family: 'Oswald', sans-serif;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: dotted white 2px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.logo-bar {
+  font-size: 20pt;
+  text-decoration-style: none;
+
+}
+
+.top-bar > a:hover {
+  text-decoration: none;
+  color: rgb(56, 58, 174);
+}
+
+.top-bar > a {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.top-bar img {
+  width: 60px;
+  height: 60px;
+}
+
+.panier img {
+  width: 45px;
+  height: 45px;
+
+}
+
+.panier {
+  text-decoration-style: none;
+  font-size: 18pt;
+  color: white;
+  margin-left: 30px;
+  border-left: dashed white 2px;
+}
+
+/* Header */
+
+div.nav {
+  font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+  padding: 5em;
+  text-align: center;
+  display: block;
+
+}
+
+/* demander pour montrer un autre affichage en mode ecran plus petit */
+
+.voir {
+  /* display: inline-grid; */
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: rgba(56, 58, 174, 0.4);
+  border-radius: 5px;
+  min-height: 60px;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  justify-content: center;
+}
+
+div.nav a {
+  color: #FFF;
+  text-decoration: none;
+  font: 22px Oswald;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+
+
+.color {
+  background-color: rgba(15, 46, 82, 0.4);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+div.border a:before,
+div.border a:after {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 2px;
+  content: '';
+  background: #FFF;
+  transition: all 0.3s;
+}
+
+div.border a:before {
+  left: 0px;
+  top: 0px;
+}
+
+div.border a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+div.border a:hover:before,
+div.border a:hover:after {
+  opacity: 1;
+  height: 2px;
+  width: 100%;
+}
+
+.logo img {
+  width: 30%;
+  height: 30%;
+}
+
+.border {
+  border: 0px !important;
+}
+
+
+
+
+
+.card-text:last-child {
+  background-color: black;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+aside {
+  margin-top: 30px;
+  background-color: black;
+  color: black;
+  border: dotted 2px white;
+  width: 100%;
+  min-height: 410px;
+  height: 100%;
+}
+
+.test {
+  margin: 10px;
+  /*transition-property: transform;*/
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+
+.test:hover {
+
+  transform: translateY(30px);
+  /* transform: rotate(10deg); */
+  border: solid white 6px;
+  transition-duration: 0.8s;
+
+
+
+}
+
+.test img {
+  width: 100%;
+  height: 250px;
+}
+
+.row {
+  justify-content: center;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 15px;
+}
+
+.cat {
+  text-align: center;
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+
+
+/*produits vente section*/
+
+.bordure {
+  border-bottom: solid 5px black;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.move {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+
+}
+
+.move:hover {
+  transition: 0.5s;
+  transform: translateY(-10px);
+}
+
+
+
+.text {
+  justify-content: center;
+  background-color: rgba(0, 85, 177, 0.6);
+}
+
+
+.image img {
+  width: 60px;
+  height: 60px;
+}
+
+
+/* modalité*/
+
+
+.modalite img {
+  width: 110px;
+  height: 110px;
+}
+
+.modalite {
+  background-color: #8907ff;
+  padding: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 250px;
+  height: 100%;
+  border: dotted 5px black;
+  text-align: center;
+}
+
+.mod p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 15pt;
+}
+
+.bord {
+  border-right: 3px solid black;
+}
+
+
+/*footer*/
+
+
+
+.ic img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-pied img {
+  margin-top: -140px;
+}
+
+.fond {
+  width: 80%;
+  background-color: rgb(137, 7, 255);
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.mb-0 {
+  font-size: 14pt;
+
+}
+
+.page-footer {
+  font-family: 'Oswald', sans-serif;
+
+}
+
+/*description css html*/
+
+.breadcrumb {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.formulaire {
+  background-color: #86af1c;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.text-white {
+  max-height: 700px;
+}
+
+.autre-fond {
+  background-color: #8907ff;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+/* panier css */
+
+
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  #cart tbody td .form-control {
+    width: 20%;
+    display: inline !important;
+  }
+
+  .actions .btn {
+    width: 36%;
+    margin: 1.5em 0;
+  }
+
+  .actions .btn-info {
+    float: left;
+  }
+
+  .actions .btn-danger {
+    float: right;
+  }
+
+  #cart thead {
+    display: none;
+  }
+
+  #cart tbody td {
+    display: block;
+    padding: .6rem;
+    min-width: 320px;
+  }
+
+  #cart tbody tr td:first-child {
+    background: #333;
+    color: #fff;
+  }
+
+  #cart tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 8rem;
+  }
+
+
+
+  #cart tfoot td {
+    display: block;
+  }
+
+  #cart tfoot td .btn {
+    display: block;
+  }
+
+}
+
+.bag img {
+  width: 200px;
+  height: 200px;
+}
+
+.titre {
+  display: block;
+  width: 50%;
+  height: 100px;
+  border-bottom: solid 4px black;
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.table-hover {
+  background-color: white;
+}
+
+
+.text-produit {
+  background-color: #8907ff;
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#cart {
+  margin-bottom: 100px;
+  height: 20%;
+}
+
+
+/* filtre et categorie page css */
+
+.dropdown {
+  font-family: 'Oswald', sans-serif;
+  margin-left: 50px;
+}
+
+.filtre {
+  background-color: black;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.bag-marge {
+  margin-top: 10px;
+}
+
+
+/* compte page css */
+
+.icone img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.membre {
+  justify-content: left;
+  margin-bottom: 40px;
+}
+
+.account {
+  flex: 0.1;
+}
+
+.present {
+  margin-left: 20px;
+}
+
+.compte {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  border-bottom: solid 3px black;
+}
+
+.marge {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/*video css */
+
+.text-event {
+  margin-left: 30px;
+}
+
+.actu {
+  margin-right: 150px;
+}
+
+.event:hover {
+  transition: 1s;
+  background-color: #ffff00;
+  transform: translateY(15px);
+  border-top: 8px solid black;
+}
+
+.event h1 {
+  font-size: 250pt;
+  text-align: center;
+  color: black;
+  border-bottom: 8px solid black;
+  font-size: 8vw;
+}
+
+.blog {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
