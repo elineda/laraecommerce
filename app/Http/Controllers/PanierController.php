@@ -41,4 +41,16 @@ class PanierController extends Controller
         $add->save();
         return redirect('/panier');
     }
+    public function achat(){
+        $idu=\Auth::user()->id;
+        $paniers=\App\Panier::where('user_id',$idu)->get();
+        foreach ($paniers as $panier){
+            $ach=new \App\Achat;
+            $ach->produit_id=$panier->produit_id;
+            $ach->user_id=$panier->user_id;
+            $ach->save();
+        }
+        $paniers=\App\Panier::where('user_id',$idu)->delete();
+        return redirect('/panier');
+    }
 }
