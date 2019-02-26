@@ -14,4 +14,13 @@ class ProduitController extends Controller
         //return $produits;
         return view('produit')->withProduits($produits);
     }
+
+    public function categorie($cat)
+    {
+
+        $produits=\App\Produit::where('categorie',$cat)->take(20)->get();
+
+        //return $produits;
+        return view('produit')->withProduits($produits);
+    }
 }
