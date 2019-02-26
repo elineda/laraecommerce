@@ -41,7 +41,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <li class="nav-item"><a class="nav-link" href="{{route('index')}}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/laralecommerce/public/categorie/art">Art</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/laralecommerce/public/categorie/peinture">Peinture</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/laralecommerce/public/categorie/objet">Objet</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -57,21 +60,28 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('panier') }}">Votre panier</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">
+                                    {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </li>
                                 </div>
                             </li>
                         @endguest
@@ -84,17 +94,9 @@
 
                 <div class="logo">
                     <img src="/laralecommerce/public/img/chouette.png">
-                    <h3>(Owl Art)</h3>
+
                 </div>
-                    <a>Home</a>
-                    <a>Nouveautés</a>
-                    <a>Oeuvres</a>
-                    <a href="filtre.html">Peinture</a>
-                    <a>Sculpture</a>
-                    <a>Photographie</a>
-                    <a>Dessin</a>
-                    <a>Artistes</a>
-                </div>
+
 
             <main class="py-4">
             @yield('content')
