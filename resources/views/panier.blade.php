@@ -20,7 +20,7 @@
 
             </tbody>
         </table>
-
+<div>Total : {{$total}} €</div>
         <a style="margin-left: 33%;" href="/laralecommerce/public/panier/g"><button type="button" class="btn btn-dark">achat</button></a>
 
     </div>

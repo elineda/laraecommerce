@@ -24,7 +24,8 @@ class PanierController extends Controller
 
         }
         //return $listes;
-        return view('panier')->withListes($listes);
+        $total=\App\Panier::where('user_id',$id)->sum('prix');
+        return view('panier')->withListes($listes)->withTotal($total);
     }
     public function supp($idp){
         $idu=\Auth::user()->id;
