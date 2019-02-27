@@ -219,7 +219,7 @@
                     <p>
                         <i class="fa fa-home mr-3"></i>Saint-Etienne 42, Telecom, FR</p>
                     <p>
-                        <i class="fa fa-envelope mr-3"></i> owlART@entreprise.com</p>
+                        <i class="fa fa-envelope mr-3"></i> owlArt@entreprise.com</p>
                     <p>
                         <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
                     <p>
@@ -235,7 +235,7 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
             <a href="https://mdbootstrap.com/education/bootstrap/"> Design Tech Academy</a>
         </div>
         <!-- Copyright -->

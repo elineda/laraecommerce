@@ -547,3 +547,29 @@ aside {
   margin-top: 50px;
   margin-bottom: 100px;
 }
+
+.card_img{
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.card-x{
+  width: 500px;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+.desc{
+  border: darkgrey 1px solid;
+  border-radius:15px;
+  padding:1em;
+  box-shadow: 5px 10px lightgrey;
+}
+
+.detail{
+  font-size: 12px;
+
+  border-radius:15px;
+  background-color: #efefef;
+  padding: 10px;
+}
