@@ -22,3 +22,7 @@ Route::get('/prodone/{id}','ProdControllerAPI@get')->where('n','[0-9]+');
 Route::post('/prod','ProdControllerAPI@add');
 Route::put('/prod/{id}','ProdControllerAPI@modi')->where('n','[0-9]+');
 Route::delete('/prod/{id}','ProdControllerAPI@del')->where('n','[0-9]+');
+
+
+Route::get('/ach','ProdControllerAPI@allachat');
+Route::get('/achone/{id}','ProdControllerAPI@getachat')->where('n','[0-9]+');

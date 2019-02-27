@@ -11166,9 +11166,8 @@ aside {
 
 .cardx {
   width: 500px;
-  margin: auto;
   margin-top: 10%;
-  margin-left: 20%;
+  margin-left: 25%;
 }
 
 .desc {
@@ -11180,5 +11179,8 @@ aside {
 
 .detail {
   font-size: 12px;
+  border-radius: 15px;
+  background-color: #f2f3f4;
+  padding: 10px;
 }
 

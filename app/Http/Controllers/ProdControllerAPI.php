@@ -37,4 +37,12 @@ class ProdControllerAPI extends Controller
         $produit=\App\Produit::where('id',$id)->delete();
         return 204;
     }
+    public function allachat(){
+        $produits=\App\Achat::all();
+        return $produits;
+    }
+    public function getachat($id){
+        $produits=\App\Achat::where('user_id',$id)->get();
+        return $produits;
+    }
 }
