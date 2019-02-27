@@ -16,3 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/prod','ProdControllerAPI@all');
+Route::get('/prodone/{id}','ProdControllerAPI@get')->where('n','[0-9]+');
+Route::post('/prod','ProdControllerAPI@add');
+Route::put('/prod/{id}','ProdControllerAPI@modi')->where('n','[0-9]+');
+Route::delete('/prod/{id}','ProdControllerAPI@del')->where('n','[0-9]+');

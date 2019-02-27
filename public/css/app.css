@@ -11164,10 +11164,11 @@ aside {
   border-radius: 15px;
 }
 
-.card-x {
+.cardx {
   width: 500px;
+  margin: auto;
   margin-top: 10%;
-  margin-left: 25%;
+  margin-left: 20%;
 }
 
 .desc {
@@ -11179,8 +11180,5 @@ aside {
 
 .detail {
   font-size: 12px;
-  border-radius: 15px;
-  background-color: #efefef;
-  padding: 10px;
 }
 
