@@ -12,4 +12,5 @@ class Produit extends Model
     public function achats(){
         return $this->hasMany('App\Achat');
     }
+    protected $fillable = ['nom', 'description'];
 }
