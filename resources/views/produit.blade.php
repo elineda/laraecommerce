@@ -23,7 +23,7 @@
                         <h5 class="card-title">{{$produit->nom}}</h5>
                         <p class="card-text">{{$produit->description}}<br>Taille : {{$produit->taille}}<br>{{$produit->prix}} €</p>
                         <a class="btn btn-outline-primary" href="/laralecommerce/public/description/{{$produit->id}}" role="button">Description</a>
-                        <a class="btn btn-outline-warning" href="/laralecommerce/public/panier/a/{{$produit->id}}" role="button">Panier</a>
+                        <a class="btn btn-outline-danger" href="/laralecommerce/public/panier/a/{{$produit->id}}" role="button">Panier</a>
                     </div>
                 </div>
 
