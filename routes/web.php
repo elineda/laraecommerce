@@ -29,5 +29,5 @@ Route::get('/categorie/{n}','ProduitController@categorie')->where('n','[A-Za-z]+
 
 Route::get('/description/{n}','DescriptionController@index')->where('n','[0-9]+');
 
-
+Route::get('/settings', 'SettingsController@index')->name('settings');
 
